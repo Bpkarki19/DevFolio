@@ -7,7 +7,6 @@ export default function Intro() {
             <section className={styles.left}>
                 <span>Hi, I'm</span>
                 <h1>Bipin ,<br />Frontend Developer<div className={styles.blink}></div></h1>
-
                 <p>
                     I work mainly with <span className={styles.tech}>React</span>,
                     <span className={styles.tech}>Vue.js</span>,
