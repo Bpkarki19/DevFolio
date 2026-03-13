@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.swiper {
+    padding: 40px 0 60px 0 !important;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid var(--hover-color, rgba(0, 0, 0, 0.05));
+    border-top-width: 4px;
+    height: 180px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px -5px var(--hover-color, rgba(0, 0, 0, 0.1)),
+        0 5px 15px -5px var(--hover-color, rgba(0, 0, 0, 0.05));
+    border-color: var(--hover-color);
+}
+
+.icon,
+.svgIcon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .svgIcon {
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Pagination styles */
+:global(.swiper-pagination) {
+    bottom: 0 !important;
+}
+
+:global(.swiper-pagination-bullet) {
+    background: #ccc !important;
+    opacity: 1 !important;
+    width: 10px !important;
+    height: 10px !important;
+    transition: all 0.3s ease;
+    outline: none !important;
+    border: none !important;
+}
+
+:global(.swiper-pagination-bullet::before),
+:global(.swiper-pagination-bullet::after) {
+    display: none !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: #024abc !important;
+    width: 10px !important;
+    /* Changed back to circle for a cleaner look */
+    border-radius: 50% !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 150px;
+        padding: 20px;
+    }
+
+    .icon {
+        font-size: 32px;
+    }
+}

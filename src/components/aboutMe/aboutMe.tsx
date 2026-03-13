@@ -1,5 +1,7 @@
 import styles from "./aboutMe.module.css"
 
+import TechStack from "../techStack/techStack"
+
 export default function AboutMe() {
     return (
         <div className={styles.aboutMe}>
@@ -17,6 +19,7 @@ export default function AboutMe() {
 
                 I value clean code, teamwork, and building projects that make a real difference.
             </p>
+            <TechStack />
         </div>
     )
 }
