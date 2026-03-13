@@ -17,7 +17,6 @@ export default function Intro() {
                     <span className={styles.tech}>Spring Boot</span> and <span className={styles.tech}>MySQL</span>.
                     My goal is to build clean, efficient, and visually
                     engaging digital experiences.
-
                 </p>
 
             </section>
