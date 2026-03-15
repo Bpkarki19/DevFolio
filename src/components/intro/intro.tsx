@@ -1,5 +1,5 @@
 import styles from "./intro.module.css"
-import profileImg from "../../assets/p2.jpg"
+import profileImg from "../../assets/p2.JPG"
 
 export default function Intro() {
     return (
