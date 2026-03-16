@@ -4,6 +4,9 @@
     background-color: whitesmoke;
     align-items: center;
     padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -11,10 +14,50 @@
     height: 50px;
     width: 50px;
     background-color: red;
-
 }
 
 .nav span {
     color: #000;
     font-size: 30px;
+}
+
+/* Language Toggle */
+.langToggle {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #1a1a2e;
+    border: 2px solid #4f46e5;
+    border-radius: 999px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease, transform 0.15s ease;
+    font-family: inherit;
+}
+
+.langToggle:hover {
+    box-shadow: 0 0 12px rgba(79, 70, 229, 0.6);
+    transform: scale(1.04);
+}
+
+.langOption {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
+    /* Override the nav span rule */
+    font-size: 13px !important;
+}
+
+.langOption.active {
+    color: #818cf8;
+}
+
+.divider {
+    font-size: 12px !important;
+    color: #374151;
+    margin: 0 2px;
+    user-select: none;
 }

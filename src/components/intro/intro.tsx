@@ -1,24 +1,35 @@
 import styles from "./intro.module.css"
 import profileImg from "../../assets/p2.png"
+import { useLanguage } from "../../context/LanguageContext"
+
+function highlightText(body: string, highlights: readonly string[]) {
+    const regex = new RegExp(`(${highlights.map(h => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi')
+    const parts = body.split(regex)
+
+    return parts.map((part, i) => {
+        const isHighlight = highlights.some(h => h.toLowerCase() === part.toLowerCase())
+        return isHighlight
+            ? <span key={i} className={styles.tech}>{part}</span>
+            : part
+    })
+}
 
 export default function Intro() {
+    const { t } = useLanguage()
+
     return (
         <div className={styles.intro}>
             <section className={styles.left}>
-                <span>Hi, I'm</span>
-                <h1>Bipin ,<br />Frontend Developer<div className={styles.blink}></div></h1>
+                <span>{t.intro.greeting}</span>
+                <h1>
+                    {t.intro.name}
+                    <br />
+                    {t.intro.title}
+                    <div className={styles.blink}></div>
+                </h1>
                 <p>
-                    I work mainly with <span className={styles.tech}>React</span>,
-                    <span className={styles.tech}>Vue.js</span>,
-                    <span className={styles.tech}>Next.js</span>, and <br />
-                    <span className={styles.tech}>TypeScript</span>, and  i'm
-                    currently expanding my skills in
-                    <span className={styles.tech}>backend development</span> with
-                    <span className={styles.tech}>Spring Boot</span> and <span className={styles.tech}>MySQL</span>.
-                    My goal is to build clean, efficient, and visually
-                    engaging digital experiences.
+                    {highlightText(t.intro.body, t.intro.techHighlights)}
                 </p>
-
             </section>
             <section className={styles.right}>
                 <div className={styles.imageWrapper}>
