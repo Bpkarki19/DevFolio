@@ -19,7 +19,7 @@ export default function Intro() {
 
     return (
         <div className={styles.intro}>
-            <section className={styles.left}>
+            <section className={styles.textContent}>
                 <span>{t.intro.greeting}</span>
                 <h1>
                     {t.intro.name}
@@ -31,7 +31,7 @@ export default function Intro() {
                     {highlightText(t.intro.body, t.intro.techHighlights)}
                 </p>
             </section>
-            <section className={styles.right}>
+            <section className={styles.imageContent}>
                 <div className={styles.imageWrapper}>
                     <img src={profileImg} alt="Bipin - Frontend Developer" />
                 </div>

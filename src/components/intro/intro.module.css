@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.left {
+.textContent {
     animation: slideUp 0.8s ease-out;
 }
 
@@ -40,7 +40,7 @@
     }
 }
 
-.left h1 {
+.textContent h1 {
     font-size: 40px;
     line-height: 1;
     font-weight: 800;
@@ -49,8 +49,8 @@
     padding-bottom: 20px;
 }
 
-.left p,
-.left span {
+.textContent p,
+.textContent span {
     font-size: 19px;
     line-height: 1.4;
     font-weight: 400;
@@ -62,12 +62,12 @@
     box-sizing: border-box;
 }
 
-.left .tech {
+.textContent .tech {
     color: #024abc;
     font-weight: 600;
 }
 
-.right {
+.imageContent {
     justify-content: center;
     align-items: center;
     position: relative;
@@ -90,7 +90,7 @@
 
 }
 
-.right img {
+.imageContent img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -173,12 +173,12 @@
         gap: 2rem;
     }
 
-    .left h1 {
+    .textContent h1 {
         font-size: 36px;
     }
 
-    .left p,
-    .left span {
+    .textContent p,
+    .textContent span {
         font-size: 20px;
     }
 }
@@ -188,26 +188,26 @@
     .intro {
         flex-direction: column-reverse;
         /*disply in reverse order*/
-
-        padding: 4rem 40%;
+        padding: 4rem 5%;
         text-align: center;
         gap: 2rem;
         /*refer to html element font size*/
         min-height: auto;
     }
 
-    .left {
+    .textContent {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
-    .left h1 {
+    .textContent h1 {
         font-size: 32px;
         padding-bottom: 15px;
     }
 
-    .left p {
+    .textContent p {
         width: 100%;
         max-width: 100%;
         font-size: 18px;
