@@ -44,7 +44,7 @@
 .langOption {
     font-size: 13px;
     font-weight: 600;
-    color: #6b7280;
+    color: rgba(193, 193, 193, 0.5) !important;
     letter-spacing: 0.04em;
     transition: color 0.2s ease;
     /* Override the nav span rule */
@@ -52,12 +52,12 @@
 }
 
 .langOption.active {
-    color: #818cf8;
+    color: #ff58f1 !important;
 }
 
 .divider {
     font-size: 12px !important;
-    color: #374151;
+    color: white;
     margin: 0 2px;
     user-select: none;
 }
