@@ -10,6 +10,13 @@
     overflow: hidden;
 }
 
+.textContent h1 .name {
+    color: #024abc;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
 .textContent {
     animation: slideUp 0.8s ease-out;
 }

@@ -22,7 +22,7 @@ export default function Intro() {
             <section className={styles.textContent}>
                 <span>{t.intro.greeting}</span>
                 <h1>
-                    {t.intro.name}
+                    <span className={styles.name}>{t.intro.name}</span>
                     <br />
                     {t.intro.title}
                     <div className={styles.blink}></div>
