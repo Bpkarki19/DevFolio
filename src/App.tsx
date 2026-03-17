@@ -3,6 +3,7 @@ import Nav from "./components/intro/nav/nav"
 import "./App.css"
 import AboutMe from "./components/aboutMe/aboutMe"
 import { LanguageProvider } from "./context/LanguageContext"
+import FeaturedProject from "./components/FeaturedProjects/featuredProject"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Nav />
         <Intro />
         <AboutMe />
+        <FeaturedProject />
       </div>
     </LanguageProvider>
   )

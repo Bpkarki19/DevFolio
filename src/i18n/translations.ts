@@ -39,6 +39,22 @@ export const translations = {
         //     emailPlaceholder: "Your Email",
         //     send: "Send Message",
         // },
+        featuredProjects: {
+            heading: "Featured Projects",
+            subheading: "Here are some of my featured projects:",
+            viewProject: "View Project",
+            viewCode: "View Code",
+            projects: [
+                {
+                    title: "Morago",
+                    description: "Its an app which helps foreigner who don't know korean language.",
+                },
+                {
+                    title: "Dream Korea",
+                    description: "A place where user can learn korean language and culture.Its in a development phase and will be launched soon in Play Store and App Store.",
+                }
+            ]
+        },
     },
 
     ko: {
@@ -80,6 +96,22 @@ export const translations = {
         //     emailPlaceholder: "이메일",
         //     send: "메시지 보내기",
         // },
+        featuredProjects: {
+            heading: "주요 프로젝트",
+            subheading: "제가 진행한 주요 프로젝트들을 소개합니다:",
+            viewProject: "프로젝트 보기",
+            viewCode: "코드 보기",
+            projects: [
+                {
+                    title: "Morago",
+                    description: "한국어를 모르는 외국인들을 위한 앱입니다.",
+                },
+                {
+                    title: "드림 코리아",
+                    description: "한국어를 배우고 문화를 체험할 수 있는 공간입니다. 현재 개발 단계에 있으며 곧 플레이 스토어와 앱 스토어에 출시될 예정입니다.",
+                }
+            ]
+        },
     },
 } as const
 
@@ -100,6 +132,13 @@ export interface Translations {
     }
     aboutMe: SectionWithBody
     techStack: { heading: string }
+    featuredProjects: {
+        heading: string
+        subheading: string
+        viewProject: string
+        viewCode: string
+        projects: Array<{ title: string, description: string }>
+    }
 }
 
 export type Language = keyof typeof translations
