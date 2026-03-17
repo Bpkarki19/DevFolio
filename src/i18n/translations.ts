@@ -137,7 +137,7 @@ export interface Translations {
         subheading: string
         viewProject: string
         viewCode: string
-        projects: Array<{ title: string, description: string }>
+        projects: readonly { title: string; description: string }[]
     }
 }
 
