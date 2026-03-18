@@ -5,7 +5,6 @@ import morago1 from "../../assets/morago-app/1.png"
 import morago2 from "../../assets/morago-app/2.png"
 import morago3 from "../../assets/morago-app/3.png"
 import morago4 from "../../assets/morago-app/4.png"
-
 import dreamkorea1 from "../../assets/Dream-korea-app/d1.png"
 import dreamkorea2 from "../../assets/Dream-korea-app/d2.png"
 import dreamkorea3 from "../../assets/Dream-korea-app/d3.png"
@@ -19,10 +18,21 @@ import dreamkorea10 from "../../assets/Dream-korea-app/d10.png"
 import dreamkorea11 from "../../assets/Dream-korea-app/d11.png"
 import dreamkorea12 from "../../assets/Dream-korea-app/d12.png"
 
+import movie1 from "../../assets/movie-search/m1.png"
+import movie2 from "../../assets/movie-search/m2.png"
+import movie3 from "../../assets/movie-search/m3.png"
+
+
 export default function FeaturedProject() {
     const { t } = useLanguage()
 
     const projectMetadata = [
+        {
+            tags: ["React", "TypeScript", "tailwind css", "Redux Toolkit", ""],
+            projectUrl: "https://movie-search-v9ve.vercel.app/",
+            codeUrl: "https://github.com/Bpkarki19/MovieSearch.git",
+            image: [movie1, movie2, movie3]
+        },
         {
             tags: ["vite.js", "WebSocket", "JWT", "WebRTC", "Spring Boot", "SQL"],
             projectUrl: "#",

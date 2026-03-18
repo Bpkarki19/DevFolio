@@ -46,6 +46,10 @@ export const translations = {
             viewCode: "View Code",
             projects: [
                 {
+                    title: "Movie Search App",
+                    description: "A movie search app which helps user to find movies and tv shows.",
+                },
+                {
                     title: "Morago",
                     description: "Its an app which helps foreigner who don't know korean language.",
                 },
