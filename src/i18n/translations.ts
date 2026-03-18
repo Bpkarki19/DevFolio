@@ -107,6 +107,10 @@ export const translations = {
             viewCode: "코드 보기",
             projects: [
                 {
+                    title: "영화 검색 앱",
+                    description: "사용자가 영화와 TV 프로그램을 검색할 수 있도록 도와주는 앱입니다.",
+                },
+                {
                     title: "Morago",
                     description: "한국어를 모르는 외국인들을 위한 앱입니다.",
                 },
