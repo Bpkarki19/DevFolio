@@ -35,8 +35,8 @@ export default function FeaturedProject() {
         },
         {
             tags: ["vite.js", "WebSocket", "JWT", "WebRTC", "Spring Boot", "SQL"],
-            projectUrl: "#",
-            codeUrl: "#",
+            projectUrl: "https://morago-b1nt06akb-bipin-karkis-projects.vercel.app/",
+            codeUrl: "https://github.com/Bpkarki19/Morago-app.git",
             image: [morago1, morago2, morago3, morago4]
         },
         {
