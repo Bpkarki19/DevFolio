@@ -42,7 +42,6 @@ export default function FeaturedProject() {
         {
             tags: ["React Native", "TypeScript", "CSS Modules", "Expo", "AI integration"],
             projectUrl: "#",
-            codeUrl: "#",
             image: [dreamkorea1, dreamkorea2, dreamkorea3, dreamkorea4, dreamkorea5, dreamkorea6, dreamkorea7, dreamkorea8, dreamkorea9, dreamkorea10, dreamkorea11, dreamkorea12]
         }
     ]
@@ -60,7 +59,7 @@ export default function FeaturedProject() {
                         image={projectMetadata[index]?.image || ""}
                         tags={projectMetadata[index]?.tags || []}
                         projectUrl={projectMetadata[index]?.projectUrl || "#"}
-                        codeUrl={projectMetadata[index]?.codeUrl || "#"}
+                        codeUrl={projectMetadata[index]?.codeUrl}
                         viewProjectLabel={t.featuredProjects.viewProject}
                         viewCodeLabel={t.featuredProjects.viewCode}
                     />

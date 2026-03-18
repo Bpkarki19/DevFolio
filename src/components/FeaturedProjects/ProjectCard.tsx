@@ -9,8 +9,8 @@ interface ProjectCardProps {
     title: string
     description: string
     tags: string[]
-    projectUrl: string
-    codeUrl: string
+    projectUrl?: string
+    codeUrl?: string
     viewProjectLabel: string
     viewCodeLabel: string
 }
@@ -51,8 +51,10 @@ export default function ProjectCard({
             <h3>{title}</h3>
             <p>{description}</p>
             <div className={styles.buttons}>
-                <button onClick={() => window.open(projectUrl, "_blank")}>{viewProjectLabel}</button>
-                <button onClick={() => window.open(codeUrl, "_blank")}>{viewCodeLabel}</button>
+                <button className={styles.primaryBtn} onClick={() => window.open(projectUrl, "_blank")}>{viewProjectLabel}</button>
+                {codeUrl && (
+                    <button className={styles.secondaryBtn} onClick={() => window.open(codeUrl, "_blank")}>{viewCodeLabel}</button>
+                )}
             </div>
             <div className={styles.tags}>
                 {tags.map((tag, index) => (
