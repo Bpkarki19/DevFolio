@@ -56,6 +56,14 @@ export const translations = {
                 {
                     title: "Dream Korea",
                     description: "A place where user can learn korean language and culture.Its in a development phase and will be launched soon in Play Store and App Store.",
+                },
+                {
+                    title: "Financial App",
+                    description: "A personal finance management application built with React and Supabase for tracking expenses and budgets.",
+                },
+                {
+                    title: "code Nest",
+                    description: "A coding school platform built with React and TypeScript.",
                 }
             ]
         },
@@ -117,6 +125,10 @@ export const translations = {
                 {
                     title: "드림 코리아",
                     description: "한국어를 배우고 문화를 체험할 수 있는 공간입니다. 현재 개발 단계에 있으며 곧 플레이 스토어와 앱 스토어에 출시될 예정입니다.",
+                },
+                {
+                    title: "재정 관리 앱",
+                    description: "React와 Supabase로 구축된 개인 재정 관리 애플리케이션으로 지출과 예산을 추적할 수 있습니다.",
                 }
             ]
         },

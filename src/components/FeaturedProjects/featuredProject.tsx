@@ -22,6 +22,10 @@ import movie1 from "../../assets/movie-search/m1.png"
 import movie2 from "../../assets/movie-search/m2.png"
 import movie3 from "../../assets/movie-search/m3.png"
 
+import f1 from "../../assets/FinancialApp/f1.png"
+import f2 from "../../assets/FinancialApp/f2.png"
+
+import nest1 from "../../assets/codeNest/nest1.png"
 
 export default function FeaturedProject() {
     const { t } = useLanguage()
@@ -43,6 +47,17 @@ export default function FeaturedProject() {
             tags: ["React Native", "TypeScript", "CSS Modules", "Expo", "AI integration"],
             projectUrl: "#",
             image: [dreamkorea1, dreamkorea2, dreamkorea3, dreamkorea4, dreamkorea5, dreamkorea6, dreamkorea7, dreamkorea8, dreamkorea9, dreamkorea10, dreamkorea11, dreamkorea12]
+        },
+        {
+            tags: ["React", "TypeScript","vite.js", "CSS Modules", "supabase"],
+            projectUrl: "https://personal-ca.vercel.app/",
+            image: [f1,f2]
+        },
+        {
+            tags: ["React", "TypeScript", "tailwind css", "Redux Toolkit", ""],
+            projectUrl: "https://code-nest-gray.vercel.app/",
+            image: [nest1]
+
         }
     ]
 

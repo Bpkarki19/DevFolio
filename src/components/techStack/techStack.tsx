@@ -1,3 +1,4 @@
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -36,7 +37,7 @@ export default function TechStack() {
             >
                 {techStack.map((tech, index) => (
                     <SwiperSlide key={index}>
-                        <div className={styles.card} style={{ '--hover-color': tech.color } as any}>
+                        <div className={styles.card} style={{ '--hover-color': tech.color } as React.CSSProperties}>
                             <svg className={styles.svgIcon} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 {tech.icon}
                             </svg>
