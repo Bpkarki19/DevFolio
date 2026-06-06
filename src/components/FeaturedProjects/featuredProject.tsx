@@ -27,6 +27,14 @@ import f2 from "../../assets/FinancialApp/f2.png"
 
 import nest1 from "../../assets/codeNest/nest1.png"
 
+import gh1 from "../../assets/ghar-bazar/gh1.png"
+import gh2 from "../../assets/ghar-bazar/gh2.png"
+import gh3 from "../../assets/ghar-bazar/gh3.png"
+
+import g1 from "../../assets/guras/g1.png"
+import g2 from "../../assets/guras/g2.png"
+import g3 from "../../assets/guras/g3.png"
+
 export default function FeaturedProject() {
     const { t } = useLanguage()
 
@@ -57,7 +65,16 @@ export default function FeaturedProject() {
             tags: ["React", "TypeScript", "tailwind css", "Redux Toolkit", ""],
             projectUrl: "https://code-nest-gray.vercel.app/",
             image: [nest1]
-
+        },
+        {
+            tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+            projectUrl: "https://ghar-bazar.vercel.app/",
+            image: [gh1, gh2, gh3]
+        },
+        {
+            tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+            projectUrl: "https://guras.vercel.app/",
+            image: [g1, g2, g3]
         }
     ]
 

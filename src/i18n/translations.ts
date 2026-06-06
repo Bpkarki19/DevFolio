@@ -64,6 +64,14 @@ export const translations = {
                 {
                     title: "code Nest",
                     description: "A coding school platform built with React and TypeScript.",
+                },
+                {
+                    title: "GharBazar",
+                    description: "A real estate marketplace connecting buyers, sellers, and renters across all 77 districts of Nepal with verified property listings.",
+                },
+                {
+                    title: "Guras",
+                    description: "A software development company website showcasing services, expertise, and portfolio.",
                 }
             ]
         },
@@ -129,6 +137,18 @@ export const translations = {
                 {
                     title: "재정 관리 앱",
                     description: "React와 Supabase로 구축된 개인 재정 관리 애플리케이션으로 지출과 예산을 추적할 수 있습니다.",
+                },
+                {
+                    title: "코드 네스트",
+                    description: "React와 TypeScript로 구축된 코딩 스쿨 플랫폼입니다.",
+                },
+                {
+                    title: "GharBazar",
+                    description: "네팔 전역 77개 지구의 검증된 부동산 매물을 통해 구매자, 판매자, 세입자를 연결하는 부동산 마켓플레이스입니다.",
+                },
+                {
+                    title: "Guras",
+                    description: "서비스, 전문성, 포트폴리오를 소개하는 소프트웨어 개발 회사 웹사이트입니다.",
                 }
             ]
         },
