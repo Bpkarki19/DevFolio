@@ -46,6 +46,10 @@ export const translations = {
             viewCode: "View Code",
             projects: [
                 {
+                    title: "MasterHangul",
+                    description: "A web app that helps users learn to read, write, and master the Korean language, from begining to advance level. The website is live at below,",
+                },
+                {
                     title: "Movie Search App",
                     description: "A movie search app which helps user to find movies and tv shows.",
                 },
@@ -54,8 +58,8 @@ export const translations = {
                     description: "Its an app which helps foreigner who don't know korean language.",
                 },
                 {
-                    title: "Dream Korea",
-                    description: "A place where user can learn korean language and culture.Its in a development phase and will be launched soon in Play Store and App Store.",
+                    title: "MasterHangul App",
+                    description: "A mobile app where users can learn Korean language and culture. It's in a development phase and will be launched soon in the Play Store and App Store.",
                 },
                 {
                     title: "Financial App",
@@ -123,6 +127,10 @@ export const translations = {
             viewCode: "코드 보기",
             projects: [
                 {
+                    title: "마스터한글",
+                    description: "사용자가 한글을 읽고, 쓰고, 익힐 수 있도록 도와주는 웹 애플리케이션입니다.",
+                },
+                {
                     title: "영화 검색 앱",
                     description: "사용자가 영화와 TV 프로그램을 검색할 수 있도록 도와주는 앱입니다.",
                 },
@@ -131,8 +139,8 @@ export const translations = {
                     description: "한국어를 모르는 외국인들을 위한 앱입니다.",
                 },
                 {
-                    title: "드림 코리아",
-                    description: "한국어를 배우고 문화를 체험할 수 있는 공간입니다. 현재 개발 단계에 있으며 곧 플레이 스토어와 앱 스토어에 출시될 예정입니다.",
+                    title: "마스터한글 앱",
+                    description: "한국어와 문화를 배울 수 있는 모바일 앱입니다. 현재 개발 단계에 있으며 곧 플레이 스토어와 앱 스토어에 출시될 예정입니다.",
                 },
                 {
                     title: "재정 관리 앱",

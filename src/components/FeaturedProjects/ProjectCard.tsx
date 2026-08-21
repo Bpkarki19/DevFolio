@@ -1,3 +1,4 @@
+import { useState } from "react"
 import styles from "./ProjectCard.module.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Autoplay } from "swiper/modules"
@@ -25,6 +26,9 @@ export default function ProjectCard({
     viewProjectLabel,
     viewCodeLabel
 }: ProjectCardProps) {
+    const [activeIndex, setActiveIndex] = useState(0)
+    const images = Array.isArray(image) ? image : [image]
+
     return (
         <div className={styles.project}>
             {Array.isArray(image) ? (
@@ -35,6 +39,7 @@ export default function ProjectCard({
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
                         loop={true}
                         className={styles.swiperContainer}
+                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     >
                         {image.map((img, index) => (
                             <SwiperSlide key={index}>
@@ -48,6 +53,9 @@ export default function ProjectCard({
                     <img src={image} alt={title} />
                 </div>
             )}
+            <div className={styles.fullscreenOverlay}>
+                <img src={images[activeIndex]} alt={`${title} full preview`} />
+            </div>
             <h3>{title}</h3>
             <p>{description}</p>
             <div className={styles.buttons}>

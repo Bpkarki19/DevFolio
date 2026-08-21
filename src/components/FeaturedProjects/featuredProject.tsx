@@ -1,22 +1,26 @@
 import styles from "./featuredProject.module.css"
 import ProjectCard from "./ProjectCard"
 import { useLanguage } from "../../context/LanguageContext"
+import masterhangul1 from "../../assets/masterhangul-web/mh1.png"
+import masterhangul2 from "../../assets/masterhangul-web/mh2.png"
+import masterhangul3 from "../../assets/masterhangul-web/mh3.png"
+import masterhangul4 from "../../assets/masterhangul-web/mh4.png"
 import morago1 from "../../assets/morago-app/1.png"
 import morago2 from "../../assets/morago-app/2.png"
 import morago3 from "../../assets/morago-app/3.png"
 import morago4 from "../../assets/morago-app/4.png"
-import dreamkorea1 from "../../assets/Dream-korea-app/d1.png"
-import dreamkorea2 from "../../assets/Dream-korea-app/d2.png"
-import dreamkorea3 from "../../assets/Dream-korea-app/d3.png"
-import dreamkorea4 from "../../assets/Dream-korea-app/d4.png"
-import dreamkorea5 from "../../assets/Dream-korea-app/d5.png"
-import dreamkorea6 from "../../assets/Dream-korea-app/d6.png"
-import dreamkorea7 from "../../assets/Dream-korea-app/d7.png"
-import dreamkorea8 from "../../assets/Dream-korea-app/d8.png"
-import dreamkorea9 from "../../assets/Dream-korea-app/d9.png"
-import dreamkorea10 from "../../assets/Dream-korea-app/d10.png"
-import dreamkorea11 from "../../assets/Dream-korea-app/d11.png"
-import dreamkorea12 from "../../assets/Dream-korea-app/d12.png"
+import masterhangulapp1 from "../../assets/masterhangul-mobile-app/d1.png"
+import masterhangulapp2 from "../../assets/masterhangul-mobile-app/d2.png"
+import masterhangulapp3 from "../../assets/masterhangul-mobile-app/d3.png"
+import masterhangulapp4 from "../../assets/masterhangul-mobile-app/d4.png"
+import masterhangulapp5 from "../../assets/masterhangul-mobile-app/d5.png"
+import masterhangulapp6 from "../../assets/masterhangul-mobile-app/d6.png"
+import masterhangulapp7 from "../../assets/masterhangul-mobile-app/d7.png"
+import masterhangulapp8 from "../../assets/masterhangul-mobile-app/d8.png"
+import masterhangulapp9 from "../../assets/masterhangul-mobile-app/d9.png"
+import masterhangulapp10 from "../../assets/masterhangul-mobile-app/d10.png"
+import masterhangulapp11 from "../../assets/masterhangul-mobile-app/d11.png"
+import masterhangulapp12 from "../../assets/masterhangul-mobile-app/d12.png"
 
 import movie1 from "../../assets/movie-search/m1.png"
 import movie2 from "../../assets/movie-search/m2.png"
@@ -40,6 +44,11 @@ export default function FeaturedProject() {
 
     const projectMetadata = [
         {
+            tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+            projectUrl: "https://masterhangul.com",
+            image: [masterhangul1, masterhangul2, masterhangul3, masterhangul4]
+        },
+        {
             tags: ["React", "TypeScript", "tailwind css", "Redux Toolkit", ""],
             projectUrl: "https://movie-search-v9ve.vercel.app/",
             codeUrl: "https://github.com/Bpkarki19/MovieSearch.git",
@@ -54,7 +63,7 @@ export default function FeaturedProject() {
         {
             tags: ["React Native", "TypeScript", "CSS Modules", "Expo", "AI integration"],
             projectUrl: "#",
-            image: [dreamkorea1, dreamkorea2, dreamkorea3, dreamkorea4, dreamkorea5, dreamkorea6, dreamkorea7, dreamkorea8, dreamkorea9, dreamkorea10, dreamkorea11, dreamkorea12]
+            image: [masterhangulapp1, masterhangulapp2, masterhangulapp3, masterhangulapp4, masterhangulapp5, masterhangulapp6, masterhangulapp7, masterhangulapp8, masterhangulapp9, masterhangulapp10, masterhangulapp11, masterhangulapp12]
         },
         {
             tags: ["React", "TypeScript","vite.js", "CSS Modules", "supabase"],
