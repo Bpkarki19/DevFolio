@@ -46,7 +46,14 @@ export default function FeaturedProject() {
         {
             tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
             projectUrl: "https://masterhangul.com",
-            image: [masterhangul1, masterhangul2, masterhangul3, masterhangul4]
+            image: [masterhangul1, masterhangul2, masterhangul3, masterhangul4],
+            status: "live" as const
+        },
+        {
+            tags: ["React Native", "TypeScript", "CSS Modules", "Expo", "AI integration"],
+            projectUrl: "#",
+            image: [masterhangulapp1, masterhangulapp2, masterhangulapp3, masterhangulapp4, masterhangulapp5, masterhangulapp6, masterhangulapp7, masterhangulapp8, masterhangulapp9, masterhangulapp10, masterhangulapp11, masterhangulapp12],
+            status: "closed-testing" as const
         },
         {
             tags: ["React", "TypeScript", "tailwind css", "Redux Toolkit", ""],
@@ -59,11 +66,6 @@ export default function FeaturedProject() {
             projectUrl: "https://morago-b1nt06akb-bipin-karkis-projects.vercel.app/",
             codeUrl: "https://github.com/Bpkarki19/Morago-app.git",
             image: [morago1, morago2, morago3, morago4]
-        },
-        {
-            tags: ["React Native", "TypeScript", "CSS Modules", "Expo", "AI integration"],
-            projectUrl: "#",
-            image: [masterhangulapp1, masterhangulapp2, masterhangulapp3, masterhangulapp4, masterhangulapp5, masterhangulapp6, masterhangulapp7, masterhangulapp8, masterhangulapp9, masterhangulapp10, masterhangulapp11, masterhangulapp12]
         },
         {
             tags: ["React", "TypeScript","vite.js", "CSS Modules", "supabase"],
@@ -92,19 +94,30 @@ export default function FeaturedProject() {
             <h1 className={styles.title}>{t.featuredProjects.heading}</h1>
             <p className={styles.description}>{t.featuredProjects.subheading}</p>
             <div className={styles.projects}>
-                {t.featuredProjects.projects.map((project, index) => (
-                    <ProjectCard
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        image={projectMetadata[index]?.image || ""}
-                        tags={projectMetadata[index]?.tags || []}
-                        projectUrl={projectMetadata[index]?.projectUrl || "#"}
-                        codeUrl={projectMetadata[index]?.codeUrl}
-                        viewProjectLabel={t.featuredProjects.viewProject}
-                        viewCodeLabel={t.featuredProjects.viewCode}
-                    />
-                ))}
+                {t.featuredProjects.projects.map((project, index) => {
+                    const status = projectMetadata[index]?.status
+                    const statusLabel = status === "live"
+                        ? t.featuredProjects.statusLive
+                        : status === "closed-testing"
+                            ? t.featuredProjects.statusClosedTesting
+                            : undefined
+
+                    return (
+                        <ProjectCard
+                            key={index}
+                            title={project.title}
+                            description={project.description}
+                            image={projectMetadata[index]?.image || ""}
+                            tags={projectMetadata[index]?.tags || []}
+                            projectUrl={projectMetadata[index]?.projectUrl || "#"}
+                            codeUrl={projectMetadata[index]?.codeUrl}
+                            viewProjectLabel={t.featuredProjects.viewProject}
+                            viewCodeLabel={t.featuredProjects.viewCode}
+                            status={status}
+                            statusLabel={statusLabel}
+                        />
+                    )
+                })}
             </div>
         </div>
     )

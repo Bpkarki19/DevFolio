@@ -4,6 +4,7 @@ import "./App.css"
 import AboutMe from "./components/aboutMe/aboutMe"
 import { LanguageProvider } from "./context/LanguageContext"
 import FeaturedProject from "./components/FeaturedProjects/featuredProject"
+import Contact from "./components/contact/contact"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Intro />
         <AboutMe />
         <FeaturedProject />
+        <Contact />
       </div>
     </LanguageProvider>
   )

@@ -14,6 +14,8 @@ interface ProjectCardProps {
     codeUrl?: string
     viewProjectLabel: string
     viewCodeLabel: string
+    status?: "live" | "closed-testing"
+    statusLabel?: string
 }
 
 export default function ProjectCard({
@@ -24,13 +26,21 @@ export default function ProjectCard({
     projectUrl,
     codeUrl,
     viewProjectLabel,
-    viewCodeLabel
+    viewCodeLabel,
+    status,
+    statusLabel
 }: ProjectCardProps) {
     const [activeIndex, setActiveIndex] = useState(0)
     const images = Array.isArray(image) ? image : [image]
 
     return (
         <div className={styles.project}>
+            {status && statusLabel && (
+                <span className={`${styles.statusBadge} ${status === "live" ? styles.statusLive : styles.statusTesting}`}>
+                    <span className={styles.statusDot}></span>
+                    {statusLabel}
+                </span>
+            )}
             {Array.isArray(image) ? (
                 <div className={styles.slideshowContainer}>
                     <Swiper
