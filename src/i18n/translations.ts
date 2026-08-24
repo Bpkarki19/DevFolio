@@ -56,6 +56,10 @@ export const translations = {
                     description: "A mobile app where users can learn Korean language and culture. It's in a development phase and will be launched soon in the Play Store and App Store.",
                 },
                 {
+                    title: "Korea Salary Calculator",
+                    description: "A mobile app for workers in South Korea to track normal and overtime duty on a calendar, manage annual leave, and calculate their monthly net salary. It is currently in closed testing on the Play Store.",
+                },
+                {
                     title: "Movie Search App",
                     description: "A movie search app which helps user to find movies and tv shows.",
                 },
@@ -147,6 +151,10 @@ export const translations = {
                 {
                     title: "마스터한글 앱",
                     description: "한국어와 문화를 배울 수 있는 모바일 앱입니다. 현재 개발 단계에 있으며 곧 플레이 스토어와 앱 스토어에 출시될 예정입니다.",
+                },
+                {
+                    title: "한국 급여 계산기",
+                    description: "한국에서 일하는 근로자를 위한 모바일 앱으로, 캘린더에서 정상 근무와 초과 근무를 기록하고 연차를 관리하며 월 실수령액을 계산할 수 있습니다. 현재 플레이 스토어에서 비공개 테스트 중입니다.",
                 },
                 {
                     title: "영화 검색 앱",

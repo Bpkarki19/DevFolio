@@ -22,6 +22,12 @@ import masterhangulapp10 from "../../assets/masterhangul-mobile-app/d10.png"
 import masterhangulapp11 from "../../assets/masterhangul-mobile-app/d11.png"
 import masterhangulapp12 from "../../assets/masterhangul-mobile-app/d12.png"
 
+import ksc1 from "../../assets/korea-salary-calculator/k1.jpg"
+import ksc2 from "../../assets/korea-salary-calculator/k2.jpg"
+import ksc3 from "../../assets/korea-salary-calculator/k3.jpg"
+import ksc4 from "../../assets/korea-salary-calculator/k4.jpg"
+import ksc5 from "../../assets/korea-salary-calculator/k5.jpg"
+
 import movie1 from "../../assets/movie-search/m1.png"
 import movie2 from "../../assets/movie-search/m2.png"
 import movie3 from "../../assets/movie-search/m3.png"
@@ -53,6 +59,12 @@ export default function FeaturedProject() {
             tags: ["React Native", "TypeScript", "CSS Modules", "Expo", "AI integration"],
             projectUrl: "#",
             image: [masterhangulapp1, masterhangulapp2, masterhangulapp3, masterhangulapp4, masterhangulapp5, masterhangulapp6, masterhangulapp7, masterhangulapp8, masterhangulapp9, masterhangulapp10, masterhangulapp11, masterhangulapp12],
+            status: "closed-testing" as const
+        },
+        {
+            tags: ["React Native", "TypeScript", "Expo", "AsyncStorage", "Google AdMob"],
+            projectUrl: "#",
+            image: [ksc1, ksc2, ksc3, ksc4, ksc5],
             status: "closed-testing" as const
         },
         {
